@@ -35,3 +35,18 @@ with open(OUTPUT_FILE_PATH, 'r') as f:
 ```
 
 14103092 and if we also do `output_file.write(current_row[1] + '\n')` in the `except` block, we also get 14103092.
+
+```
+import csv
+
+NAME_FILE_PATH = 'names.txt'
+SORTED_NAME_FILE_PATH = 'sorted_names.txt'
+
+with open(NAME_FILE_PATH, 'r') as f:
+    name_list_newlines = f.readlines()
+    name_list = [n.removesuffix('\n') for n in name_list_newlines]
+    sorted_name_list = sorted(name_list)
+    sorted_name_list_newlines = [n + '\n' for n in sorted_name_list]
+    with open(SORTED_NAME_FILE_PATH, 'w') as sorted_file:
+        sorted_file.writelines(sorted_name_list_newlines)
+```
