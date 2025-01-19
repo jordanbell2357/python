@@ -1,6 +1,12 @@
 # csv
 
 ```
+cut -f 2 name.basics.tsv > col2.txt
+
+tail -n +2 col2.txt | sort > col2_sorted.txt
+```
+
+```
 import csv
 
 with open('name.basics.tsv', 'r') as csv_file:
