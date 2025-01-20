@@ -20,7 +20,7 @@ with open(TSV_FILE_PATH, 'r', encoding='utf-8') as tsv_file:
             row['birthYear'] = int(row['birthYear'])
         if row['deathYear'] is not None:
             row['deathYear'] = int(row['deathYear'])
-            json.dump(row, json_file, separators=(',', ':'), ensure_ascii=False)
+            json.dump(row, json_file, separators=(',', ':'), ensure_ascii=False, indent=2)
         for row in csv_reader:
             row = {k: (None if v == r'\N' else v) for k, v in row.items()}
             if row['birthYear'] is not None:
@@ -28,7 +28,7 @@ with open(TSV_FILE_PATH, 'r', encoding='utf-8') as tsv_file:
             if row['deathYear'] is not None:
                 row['deathYear'] = int(row['deathYear'])
             json_file.write(',\n')  # Add a comma and newline before each subsequent row
-            json.dump(row, json_file, separators=(',', ':'), ensure_ascii=False)
+            json.dump(row, json_file, separators=(',', ':'), ensure_ascii=False, indent=2)
 
         json_file.write('\n]\n')  # End the JSON array
 ```
