@@ -5,8 +5,8 @@ If $T(n) \leq a \cdot T\left(\frac{n}{b}\right) + O(n^d)$ then
 $$
 T(n) = \begin{cases}
 O(n^d)&a < b^d\\
-O(n^d \log n)&a = b^d\\
-O(n^{\log_b(a)})&a > b^d
+O(n^d \log_b n) = O(n^d \log n)&a = b^d\\
+O(a^{\log_b n)} = O(n^{\log_b a})&a > b^d
 \end{cases}
 $$
 
