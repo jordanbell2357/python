@@ -46,15 +46,44 @@ tail -n 2 name.head.json
 ```
 
 ```bash
-jq '.[0]' name.head.json
-{
-  "nconst": "nm0000001",
-  "primaryName": "Fred Astaire",
-  "birthYear": 1899,
-  "deathYear": 1987,
-  "primaryProfession": "actor,miscellaneous,producer",
-  "knownForTitles": "tt0072308,tt0050419,tt0053137,tt0027125"
-}
+jq . name.head.json
+```
+
+```json
+[
+  {
+    "nconst": "nm0000001",
+    "primaryName": "Fred Astaire",
+    "birthYear": 1899,
+    "deathYear": 1987,
+    "primaryProfession": "actor,miscellaneous,producer",
+    "knownForTitles": "tt0072308,tt0050419,tt0053137,tt0027125"
+  },
+  {
+    "nconst": "nm0000002",
+    "primaryName": "Lauren Bacall",
+    "birthYear": 1924,
+    "deathYear": 2014,
+    "primaryProfession": "actress,soundtrack,archive_footage",
+    "knownForTitles": "tt0037382,tt0075213,tt0117057,tt0038355"
+  },
+  {
+    "nconst": "nm0000003",
+    "primaryName": "Brigitte Bardot",
+    "birthYear": 1934,
+    "deathYear": null,
+    "primaryProfession": "actress,music_department,producer",
+    "knownForTitles": "tt0057345,tt0049189,tt0056404,tt0054452"
+  },
+  {
+    "nconst": "nm0000004",
+    "primaryName": "John Belushi",
+    "birthYear": 1949,
+    "deathYear": 1982,
+    "primaryProfession": "actor,writer,music_department",
+    "knownForTitles": "tt0072562,tt0077975,tt0080455,tt0078723"
+  }
+]
 ```
 
 ```bash
