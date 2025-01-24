@@ -8,6 +8,12 @@ fieldnames = ['emp_name', 'dept', 'birth_month']
 
 csv_file_path  = Path().cwd() / 'employee_file.csv'
 
+csv_file_path
+# PosixPath('/home/ubuntu/rp/working-with-files-in-python/employee_file.csv')
+
+csv_file_path
+# '/home/ubuntu/rp/working-with-files-in-python/employee_file.csv'
+
 csv_file_path.stem
 # 'employee_file'
 
