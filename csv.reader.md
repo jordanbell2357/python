@@ -1,6 +1,6 @@
 # csv.reader
 
-```
+```python
 import csv
 
 INPUT_FILE_PATH = 'name.basics.tsv'
