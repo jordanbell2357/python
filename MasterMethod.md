@@ -10,7 +10,7 @@ O(a^{\log_b n)} = O(n^{\log_b a})&a > b^d
 \end{cases}
 $$
 
-```
+```python
 def countdown(n):
     def countdown_from_starting_point(n, starting_point):
         if n == 0:
