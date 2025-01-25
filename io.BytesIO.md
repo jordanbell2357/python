@@ -1,6 +1,6 @@
 # io.BytesIO
 
-```
+```python
 from urllib.request import urlopen
 import gzip
 import io
