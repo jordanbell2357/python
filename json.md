@@ -39,10 +39,10 @@ head -n 2 name.head.json
 # {"nconst":"nm0000001","primaryName":"Fred Astaire","birthYear":"1899","deathYear":"1987","primaryProfession":"actor,miscellaneous,producer","knownForTitles":"tt0072308,tt0050419,tt0053137,tt0027125"},
 ```
 
-```bash
+```console
 tail -n 2 name.head.json
-# {"nconst":"nm0000004","primaryName":"John Belushi","birthYear":1949,"deathYear":1982,"primaryProfession":"actor,writer,music_department","knownForTitles":"tt0072562,tt0077975,tt0080455,tt0078723"}
-# ]
+{"nconst":"nm0000004","primaryName":"John Belushi","birthYear":1949,"deathYear":1982,"primaryProfession":"actor,writer,music_department","knownForTitles":"tt0072562,tt0077975,tt0080455,tt0078723"}
+]
 ```
 
 ```bash
