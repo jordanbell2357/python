@@ -1,6 +1,6 @@
 # bisect
 
-```
+```python
 import bisect
 import timeit
 
