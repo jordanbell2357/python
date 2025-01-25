@@ -22,3 +22,12 @@ my_dfa
 ```
 
 ![output](https://github.com/user-attachments/assets/cdaf3312-b480-4218-a7e6-5acc8efcbbee)
+
+```python
+my_dfa.accepts_input('110011')
+# False
+
+my_dfa.accepts_input('001')
+# True
+```
+
