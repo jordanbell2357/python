@@ -8,7 +8,6 @@ def load_txt_list(path):
     with open(path) as text_file:
         return text_file.read().splitlines()
 
-names = load_txt_list('names.txt')
 sorted_names = load_txt_list('names_sorted.txt')
 
 name_to_find = 'John Belushi'
